@@ -9,13 +9,14 @@ $sudo apt upgrade
 
 <h2>Install ROS 1 </h2>
 
+*Install it via run: **
 ```
 wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_melodic.sh
 $ chmod 755 ./install_ros_melodic.sh 
 $ bash ./install_ros_melodic.sh 
 ``` 
 
-**First, Insatll Dependencies of ROS 1 Packages :** 
+**Now, Insatll Dependencies of ROS 1 Packages :** 
 
 ```
 $ sudo apt-get install ros-melodic-joy ros-melodic-teleop-twist-joy 
