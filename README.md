@@ -114,14 +114,16 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 <h2> Save map </h2>
 
-To Save your map, run :
+With the map_server you can load and save maps via run :
+
 ``` 
 $ rosrun map_server map_saver -f ~/test_map
 ```
+This command will create a map.pgm and the map.yaml files.
 
 <img width="700" alt="map gpm" src="https://user-images.githubusercontent.com/43522153/123686249-461d9e80-d858-11eb-8033-fb02ec8a3337.png">
 
-Its will be saved as pgm extension.
+The map saved as pgm extension. 
 
 
 
