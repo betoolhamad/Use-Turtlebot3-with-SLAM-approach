@@ -1,4 +1,4 @@
-# Use Trutlebot3 with SLAM approach
+# Use Turtlebot3 with SLAM approach
 Run Turtlebot3 robot with SLAM approach to create a map and save it using ROS meoldic.<br> </br>
 
 **We need first to update & upgeade by run these commands to install ROS 1 if you dosen't installed before :**  
