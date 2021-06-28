@@ -40,7 +40,7 @@ $ sudo apt-get install ros-melodic-turtlebot3
 ```
 $ echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
 ```
-**Note : I chose the TurtleBot3 Burger. If you want a TurtleBot3 Waffle Pi run this command :**
+**Note : I chose the TurtleBot3 Burger. If you want a TurtleBot3 Waffle Pi, run:**
 
 ```
 $ echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc
@@ -78,19 +78,19 @@ $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 **Note : if your model is waffle or waffle_pi change the TURTLEBOT3_MODEL=burger in above command, to your model.**
 
 
-**Run SLAM Node :**  
-
+<h2> Run SLAM Node : </h2> 
 To run slam node, which Gmapping SLAM method is used by default run these command to be launch in Rviz.
+
 ```
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 ```
-**The Output of the slam of this commands will be in Rviz like this :**
+**The Output of the slam of this commands will be in Rviz like this :** <br> </br>
 
-<img width="700" alt="Run slam (Rviz)" src="https://user-images.githubusercontent.com/43522153/123655914-1a8abc00-d838-11eb-898b-a12ccbcbde45.png">
+<img width="700" alt="Run slam (Rviz)" src="https://user-images.githubusercontent.com/43522153/123686636-ab718f80-d858-11eb-9ef9-71fd19080814.png">
 
 
-**Run Teleoperation Node :**
+<h2> Run Teleoperation Node </h2> 
 
 Here to move the robot around, by teleop node using keyboard:
 ```
@@ -99,18 +99,27 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
 
-This the output of commands to control the robot motion via keyboard :
+**This the output of commands to control the robot motion via keyboard :**
 
-<img width="700" alt="KeyboardController" src="https://user-images.githubusercontent.com/43522153/123665559-0f885980-d841-11eb-9bf4-219124667ad2.png">
-
-and the result of Move the robot by this teleop node using keyboard will be like this :
+<img width="700" alt="KeyboardController" src="https://user-images.githubusercontent.com/43522153/123683550-04d7bf80-d855-11eb-8652-7e454fcf0a91.png">
 
 
+**The result of Move the robot by this teleop node using keyboard will be like this :**
 
 
+<image src = "https://user-images.githubusercontent.com/43522153/123684074-afe87900-d855-11eb-9499-6e24e21bc83b.gif" width="700" />
 
 
+<h2> Save map </h2>
 
+To Save your map, run :
+``` 
+$ rosrun map_server map_saver -f ~/test_map
+```
+
+<img width="700" alt="map gpm" src="https://user-images.githubusercontent.com/43522153/123686249-461d9e80-d858-11eb-8033-fb02ec8a3337.png">
+
+Its will be saved as pgm extension.
 
 
 
